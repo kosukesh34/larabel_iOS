@@ -19,7 +19,7 @@ struct EditUserView: View {
     init(viewModel: UserViewModel, user: User) {
         self.viewModel = viewModel
         self.user = user
-        _name = State(initialValue: user.name)
+        _name = State(initialValue: user.name!)
         _email = State(initialValue: user.email)
     }
 
