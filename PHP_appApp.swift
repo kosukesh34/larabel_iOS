@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct PHP_appApp: App {
+    @AppStorage("authToken") private var authToken: String?
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if authToken != nil {
+                ContentView()
+            } else {
+                LoginView()
+            }
         }
     }
 }
