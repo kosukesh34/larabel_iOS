@@ -8,13 +8,14 @@
 
 import Foundation
 
+// ログイン全体のレスポンス
 struct LoginResponse: Codable {
     let message: String
     let user: User
     let token: String
 }
 
-
+// ユーザー情報
 struct User: Codable {
     let id: Int
     let email: String
@@ -38,6 +39,6 @@ struct User: Codable {
         case pointId = "point_id"
         case status
         case createdAt = "created_at"
-        case updatedAt = "updated_at"
+        case updatedAt = "updated_at"      
     }
 }

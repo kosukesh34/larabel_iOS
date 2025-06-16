@@ -50,7 +50,7 @@ struct ContentView: View {
             }
             .sheet(isPresented: $isShowingUserData) {
                 if let userData = userData {
-                    UserDataView(userData: userData)
+                    UserDataView(userData: userData) // これが正常に動作する
                 } else {
                     Text("ユーザーデータがありません")
                 }
