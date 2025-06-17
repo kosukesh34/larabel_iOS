@@ -103,7 +103,7 @@ struct UserDataView: View {
             return
         }
         
-        let baseURL = "http://localhost/api"
+        let baseURL = "http://172.20.10.2/api"
         let url = "\(baseURL)/users/\(userId)"
         
         var parameters: [String: Any] = [:]

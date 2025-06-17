@@ -87,7 +87,7 @@ struct LoginView: View {
         isLoading = true
         errorMessage = nil
 
-        let url = "http://localhost/api/login"
+        let url = "http://192.168.0.155/api/login"
         let parameters: [String: String] = [
             "email": email,
             "password": password

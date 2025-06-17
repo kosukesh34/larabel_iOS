@@ -2,7 +2,7 @@ import Foundation
 
 class UserViewModel: ObservableObject {
     @Published var users: [User] = []
-    private let baseURL = "http://localhost/api/users"
+    private let baseURL = "http://172.20.10.2/api/users"
     
     func fetchUsers() {
         guard let url = URL(string: baseURL) else {

@@ -1,6 +1,7 @@
 import SwiftUI
 import Alamofire
 
+@available(iOS 16.0, *)
 struct RegisterView: View {
     @State private var name: String = ""
     @State private var email: String = ""
@@ -81,7 +82,7 @@ struct RegisterView: View {
             "password": password
         ]
 
-        AF.request("http://localhost/api/register",
+        AF.request("http://192.168.0.155/api/register",
                    method: .post,
                    parameters: parameters,
                    encoder: JSONParameterEncoder.default)

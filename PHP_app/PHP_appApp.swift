@@ -14,7 +14,7 @@ struct PHP_appApp: App {
     var body: some Scene {
         WindowGroup {
             if authToken != nil {
-                ContentView()
+                MainTabView()
             } else {
                 LoginView()
             }

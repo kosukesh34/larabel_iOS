@@ -96,7 +96,7 @@ struct ContentView: View {
             return
         }
 
-        let url = "http://localhost/api/user"
+        let url = "http://192.168.0.155/api/user"
         let headers: HTTPHeaders = [
             "Authorization": "Bearer \(token)"
         ]
